@@ -5,5 +5,22 @@ var randomWords = require("random-words");
 var myWord = randomWords();
 console.log(myWord);
 
+var guessCount = 15;
+
+function startGame() {
+	// inquirer prompt
+	inquirer
+	.prompt([{
+		name: "letter",
+		type: "input",
+		message: "please enter a letter"	
+	}])
+	.then()
+}
+
+startGame();	
+
+
+
 
 
