@@ -1,5 +1,7 @@
-// are we exporting this then since we will not be requiring any file
-exports.letter = letter;
+//exporting the letter file
+module.exports = letter;
+ 
+// Contains a constructor, Letter constructor should be able to either display a blank placeholder (such as an underscore), depending on whether or not the user has guessed the letter. 
 
 function letter(value) {
 	this.value = value;
