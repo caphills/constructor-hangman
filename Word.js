@@ -21,8 +21,8 @@ word.prototype.isComplete = function(){
 }
 
 word.prototype.findLetter = function(input){
-	// var lowerLetter = letterArray[].toLowerCase();
-	if (this.alphaGuessed.indexOf(lowerLetter) != -1) {
+	//inputowerLetter = letterArray[].toLowerCase();
+	if (this.alphaGuessed.indexOf(input) != -1) {
 		return "Duplicate";
 	} 
 	this.alphaGuessed += lowerLetter; //Record the guess
