@@ -31,7 +31,9 @@ function game() {
 		if(myWord.isComplete()){
 			// this means the user guessed all the letters and won
 			console.log("You Guessed it right!");
-			myWord = randomWordsFx();
+			var randomString = randomWordsFx();
+			var newWord = new word(randomString);
+			myWord = newWord;
 			game();
 			// end Game
 
